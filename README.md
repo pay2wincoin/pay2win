@@ -8,7 +8,7 @@ sudo add-apt-repository ppa:bitcoin/bitcoin
 sudo apt-get update && sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 cd ~/
-tar -xzvf pay2win-source.tar.gz
+git clone https://github.com/pay2wincoin/pay2win/
 chmod -R 764 pay2win/*
 cd pay2win
 
