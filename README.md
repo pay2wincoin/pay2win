@@ -8,11 +8,9 @@ sudo add-apt-repository ppa:bitcoin/bitcoin
 sudo apt-get update && sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 cd ~/
-mkdir source_code
-chmod -R 764 *
-cd source_code
-
 tar -xzvf pay2win-source.tar.gz
+chmod -R 764 pay2win/*
+cd pay2win
 
 patch -p1 < qt_fix_scrypt_powpos_213.diff
 
